@@ -32,6 +32,12 @@ def main():
 
     merged_list = solution.mergeTwoLists(list1, list2)
 
+    current = merged_list
+    while current:
+        print(f"current.val: {current.val}")
+        print(f"current.next: {current.next}")
+        current = current.next
+
     pass
 
 # call the main function
